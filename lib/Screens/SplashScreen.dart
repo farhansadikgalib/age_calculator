@@ -15,27 +15,24 @@ class _Splash_ScreenState extends State<Splash_Screen> {
     return SafeArea(
       child: SplashScreen(
         seconds: 4,
-        navigateAfterSeconds:Calculator_Screen() ,
-
-        title: Text("AGE CALCULATOR",style: TextStyle(color: Colors.brown,fontSize: 28,fontWeight: FontWeight.bold),),
-
-        image: Image.asset("assets/human.png",),
-
+        navigateAfterSeconds: Calculator_Screen(),
+        title: Text(
+          "AGE CALCULATOR",
+          style: TextStyle(
+              color: Colors.brown, fontSize: 28, fontWeight: FontWeight.bold),
+        ),
+        image: Image.asset(
+          "assets/human.png",
+        ),
         photoSize: 150,
         useLoader: true,
-        loadingText: Text("Starting Now",style: TextStyle(fontSize: 12,color: Colors.white70),),
-
-
+        loadingText: Text(
+          "Starting Now",
+          style: TextStyle(fontSize: 12, color: Colors.white70),
+        ),
         backgroundColor: Colors.blueGrey[500],
         loaderColor: Colors.black26,
-
-          
-          
-        ),
+      ),
     );
-      
-      
-      
-
   }
 }
