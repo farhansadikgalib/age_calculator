@@ -12,21 +12,27 @@ class Splash_Screen extends StatefulWidget {
 class _Splash_ScreenState extends State<Splash_Screen> {
   @override
   Widget build(BuildContext context) {
-    return SplashScreen(
-      seconds: 3,
-      navigateAfterSeconds:Calculator_Screen() ,
+    return SafeArea(
+      child: SplashScreen(
+        seconds: 4,
+        navigateAfterSeconds:Calculator_Screen() ,
 
-      title: Text("Age Calculator",style: TextStyle(color: Colors.white,fontSize: 25.0,fontWeight: FontWeight.bold),),
+        title: Text("AGE CALCULATOR",style: TextStyle(color: Colors.brown,fontSize: 28,fontWeight: FontWeight.bold),),
 
-      image: new Image.network('https://i.imgur.com/TyCSG9A.png'),
+        image: Image.asset("assets/human.png",),
+
+        photoSize: 150,
+        useLoader: true,
+        loadingText: Text("Starting Now",style: TextStyle(fontSize: 12,color: Colors.white70),),
 
 
-      backgroundColor: Colors.blueGrey,
-      loaderColor: Colors.lightGreenAccent,
+        backgroundColor: Colors.blueGrey[500],
+        loaderColor: Colors.black26,
 
-        
-        
-      );
+          
+          
+        ),
+    );
       
       
       
