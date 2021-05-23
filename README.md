@@ -3,8 +3,7 @@
 ## About the app
 * App OS : Android
 * Min SDK : Andoid 4.0
-* Frontend : JAVA,XML
-* Backend : FireBase by Google
 
-<img src="https://imgur.com/gallery/NL5u8Zb" >
 
+[splash]: https://github.com/farhansadikgalib/raw/blob/master/Age%20Calculator/splash.png
+[dashboard]: https://github.com/farhansadikgalib/raw/blob/master/Age%20Calculator/dashboard.png
